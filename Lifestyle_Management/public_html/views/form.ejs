@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=heading%></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon"  href="./images/title1.png">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            
+            <li><img class="brand left" src="./images/title1.png" alt="icon"></li>
+            <li class="navatt tag left"><span>Personal </span></li>
+            <li class="navatt tag left"><span>Assistant </span></li>
+            <li class="navatt right"><span><%=username%></span></li>
+            <li class="navatt link right"><a href="/main">Home</a></li>
+            <li class="navatt link right"><a href="/logout">Logout</a></li>
+
+        </ul>
+    </nav>
+    <div class="content">
+        <form   action="/<%=name%>" method="POST" autocomplete="off">
+        <label class="<%=err%>"><%=mssg%></label><br/>
+        <img class="special" src="./images/<%=name%>.png">
+        <h1><%=heading%></h1>
+        <label  for="eventname">Name of <%=name%></label><input type="text" name="eventname" placeholder="name of <%=name%>"/><br/>
+        <label  for="Date">Date of <%=name%></label><input type="date" name="date" required/><br/>
+        <textarea name="eventdesc" placeholder="Description of <%=name%> " required></textarea><br/>
+        
+        <button type="submit" name="formname" value="<%=heading%>">Submit</button>
+    </form>
+    </div>
+
+    <div class="footer">
+        <h1>Contact us</h1>
+        <img src="./images/fcb.png" alt="facebook"/> <a href="http:/facebook.com " target="_blank" >Facebook</a>
+        <img src="./images/insta.png" alt="instagram"/> <a href="http:/instagram.com " target="_blank" >Instagram</a>
+        <img src="./images/mail.png" alt="Mail"/> <a href="http:/gmail.com " target="_blank" > Mail</a>
+        <img src="./images/twitter.jpg" alt="twiter"/> <a href="http:/twitter.com " target="_blank" > Twitter</a>
+        <h5>&#169; Copyright 2020</h5>
+    </div>
+</body>

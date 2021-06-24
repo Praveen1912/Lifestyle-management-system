@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership</title>
+    <link rel="icon"  href="./images/title1.png">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/membership.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="navatt"><span>Personal </span></li>
+            <li><img class="brand" src="./images/signup.png" alt="icon"></li>
+            <li class="navatt"><span>Assistant </span></li>
+            
+        </ul>
+    </nav>
+    <div class="content">
+        <label class="<%=clss%>" name="errormssg"><%=errormssg%></label><br/>
+        <h1>Membership Form</h1>
+        <form action="/signup" method="POST" autocomplete="off">
+           
+            <input type="text" name="name" placeholder="  Name" required/><br/>
+            <input type="email" name="email" placeholder="  Email" required/><br/>
+            <input type="text" name="username" placeholder="  username" required/><br/>
+            <input type="password" name="password" placeholder="  Password" required/><br/>
+            
+            <button type="submit">Submit</button> 
+           
+        
+        </form>
+    </div>
+    <div class="footer">
+        <h1>Contact us</h1>
+        <img src="./images/fcb.png" alt="facebook"/> <a href="http:/facebook.com " target="_blank" >Facebook</a>
+        <img src="./images/insta.png" alt="instagram"/> <a href="http:/instagram.com " target="_blank" >Instagram</a>
+        <img src="./images/mail.png" alt="Mail"/> <a href="http:/gmail.com " target="_blank" > Mail</a>
+        <img src="./images/twitter.jpg" alt="twiter"/> <a href="http:/twitter.com " target="_blank" > Twitter</a>
+        <h5>&#169; Copyright 2020</h5>
+    </div>
+</body>
+</html>

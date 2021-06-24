@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="icon"  href="./images/title1.png">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/mainpage.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            
+            <li><img class="brand left" src="./images/title1.png" alt="icon"></li>
+            <li class="navatt tag left"><span>Personal </span></li>
+            <li class="navatt tag left"><span>Assistant </span></li>
+            <li class="navatt right"><span><%=username%></span></li>
+            <li class="navatt link right"><a href="/logout">Logout</a></li>
+
+        </ul>
+        <h1 class="heading">Welcome Back <%=username%></h1>
+    </nav>
+    <div class="content">
+        <div class="content2">
+           <div class="sp"><img class="imgadj" src="./images/avatar.png" alt="badge"/><br/></div> 
+            <h2>Username:</h2> <span><%=username%></span> <br/>
+            <h2>Name:</h2><span><%=name%></span><br/>
+            <h2>Email:</h2><span><%=email%></span><br/>
+        </div>
+    
+        <div class="content1">
+            <img class="imgadj" src="./images/bookings.png" alt="bookings"/> <a href="/bookings">Make Bookings</a><br/>
+            <img class="imgadj" src="./images/notification.png" alt="Task Remainder"/> <a href="/task">Create Remainder</a><br/><br/><br/>
+            <a href="/logout">Logout</a>
+        </div>
+    </div>
+    
+
+	<div class="footer">
+        <h1>Contact us</h1>
+        <img src="./images/fcb.png" alt="facebook"/> <a href="http:/facebook.com " target="_blank" >Facebook</a>
+        <img src="./images/insta.png" alt="instagram"/> <a href="http:/instagram.com " target="_blank" >Instagram</a>
+        <img src="./images/mail.png" alt="Mail"/> <a href="http:/gmail.com " target="_blank" > Mail</a>
+        <img src="./images/twitter.jpg" alt="twiter"/> <a href="http:/twitter.com " target="_blank" > Twitter</a>
+        <h5>&#169; Copyright 2020</h5>
+    </div>
+</body>
